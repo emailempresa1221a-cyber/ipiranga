@@ -1987,16 +1987,50 @@
             cartTotal.textContent = `R$ ${totalGeral.toFixed(2).replace('.', ',')}`;
         }
 
-        function finalizarCompra() {
-            if (cart.length === 0) {
-                alert('Seu carrinho está vazio!');
-                return;
-            }
-            
-            let total = cart.reduce((sum, item) => sum + (item.preco * item.quantidade), 0);
-            const urlFinal = `${CHECKOUT_BASE_URL}?subtotal=${total.toFixed(2)}`;
-            window.location.href = urlFinal;
-        }
+        function finalizarCompra( ) {
+    if (cart.length === 0) {
+        alert('Seu carrinho está vazio!');
+        return;
+    }
+    
+    // Desabilitar botão e mostrar carregamento
+    const botao = event.target;
+    botao.disabled = true;
+    botao.textContent = 'Processando...';
+    
+    // Simular pequeno delay para melhor UX
+    setTimeout(() => {
+        // Mapear produtos com dados essenciais
+        const produtos = cart.map(item => ({
+            id: item.id,
+            nome: item.nome,
+            valor: item.preco.toFixed(2),
+            foto: item.imagem,
+            quantidade: item.quantidade,
+            subtotal: (item.preco * item.quantidade).toFixed(2)
+        }));
+
+        // Calcular totais
+        const subtotal = cart.reduce((sum, item) => sum + (item.preco * item.quantidade), 0).toFixed(2);
+        const totalItens = cart.reduce((sum, item) => sum + item.quantidade, 0);
+
+        // Construir objeto com dados do carrinho
+        const dadosCarrinho = {
+            produtos: produtos,
+            subtotal: subtotal,
+            totalItens: totalItens,
+            timestamp: new Date().toISOString()
+        };
+
+        // Codificar dados como JSON e adicionar à URL
+        const dadosJSON = JSON.stringify(dadosCarrinho);
+        const dadosEncodificados = encodeURIComponent(dadosJSON);
+
+        // Redirecionar com dados completos
+        const urlFinal = `${CHECKOUT_BASE_URL}spinner/?carrinho=${dadosEncodificados}`;
+        window.location.href = urlFinal;
+    }, 300);
+}
 
         // Countdown Timer
         function startCountdown() {
