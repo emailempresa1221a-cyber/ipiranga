@@ -1,27 +1,42 @@
-
-
-
-
-
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Por Tmpo Limitado!</title>
-    <meta name="description" content="Aproveite a Promoção">
-    <meta name="keywords" content="Descontos Imperdiveis">
+    <title>Gift Card Posto Ipiranga - Abastecimento com Desconto</title>
+    <meta name="description" content="Gift Card Ipiranga com desconto. Abastecimento com economia em todos os postos Ipiranga do Brasil.">
+    <meta name="keywords" content="Gift Card Ipiranga, Abastecimento, Desconto, Combustível">
     <link rel="canonical" href="https://seudominio.com.br">
     
     <!-- Preload imagens críticas -->
     <link rel="preload" as="image" href="https://i.postimg.cc/85DK02R7/logo.webp">
     <link rel="preload" as="image" href="https://i.postimg.cc/8cBXvccp/Chat_GPT_Image_18_de_jan_de_2026_02_31_02.png">
     
-    <!-- Prefetch imagens dos kits -->
-    <link rel="prefetch" as="image" href="https://i.postimg.cc/8cBXvccp/Chat_GPT_Image_18_de_jan_de_2026_02_31_02.png">
-    <link rel="prefetch" as="image" href="https://i.postimg.cc/8cBXvccp/Chat_GPT_Image_18_de_jan_de_2026_02_31_02.png">
-
+    <!-- Schema.org para SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "Gift Card Posto Ipiranga",
+      "description": "Gift Card para abastecimento em todos os postos Ipiranga com desconto especial.",
+      "brand": {
+        "@type": "Brand",
+        "name": "Ipiranga"
+      },
+      "offers": {
+        "@type": "AggregateOffer",
+        "lowPrice": "69.90",
+        "highPrice": "149.90",
+        "priceCurrency": "BRL",
+        "availability": "https://schema.org/InStock"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "50247"
+      }
+    }
+    </script>
 
     <script type="text/javascript">
     (function(c,l,a,r,i,t,y){
@@ -32,13 +47,14 @@
     </script>
     
     <style>
-        *{margin:0;padding:0;box-sizing:border-box}:root{--primary:#0052a3;--primary-dark:#003d7a;--secondary:#1e73be;--accent:#fdb827;--silver:#c0c0c0;--text:#333;--text-light:#666;--bg:#ffffff;--bg-light:#f8f9fa;--border:#e0e0e0}body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;line-height:1.6;color:var(--text);background:var(--bg)}
+        *{margin:0;padding:0;box-sizing:border-box}:root{--primary:#0052a3;--primary-dark:#003d7a;--secondary:#1e73be;--accent:#fdb827;--success:#27ae60;--danger:#e74c3c;--text:#1a1a1a;--text-light:#666;--bg:#ffffff;--bg-light:#f8f9fa;--border:#e0e0e0}body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;line-height:1.6;color:var(--text);background:var(--bg)}
 
         /* Header */
         .header {
             background: white;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            padding: 15px 0;
+            padding: 12px 0;
+            position: sticky;
             top: 0;
             z-index: 1000;
         }
@@ -56,54 +72,46 @@
             display: flex;
             align-items: center;
             gap: 12px;
-            font-size: 22px;
+            font-size: 20px;
             font-weight: 900;
             color: var(--primary);
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            font-family: 'Arial Black', 'Arial Bold', sans-serif;
         }
 
-        .logo-icon {
-            width: 40px;
-            height: 40px;
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 18px;
-            font-weight: 900;
-            font-family: 'Arial Black', sans-serif;
+        .logo img {
+            height: 35px;
+            width: auto;
         }
 
         .header-trust {
             display: flex;
-            gap: 15px;
+            gap: 20px;
             align-items: center;
-            font-size: 12px;
+            font-size: 13px;
         }
 
         .trust-badge {
             display: flex;
             align-items: center;
-            gap: 5px;
+            gap: 6px;
             color: var(--text-light);
+            padding: 6px 12px;
+            background: var(--bg-light);
+            border-radius: 6px;
+            border: 1px solid var(--border);
         }
 
         .trust-badge svg {
             width: 16px;
             height: 16px;
-            color: var(--primary);
+            color: var(--success);
+            flex-shrink: 0;
         }
 
         /* Carrinho Flutuante */
         .cart-icon-float {
             position: fixed;
             right: 20px;
-            top: 50%;
-            transform: translateY(-50%);
+            bottom: 100px;
             background: var(--primary);
             color: white;
             width: 60px;
@@ -119,16 +127,17 @@
         }
 
         .cart-icon-float:hover {
-            transform: translateY(-50%) scale(1.1);
+            transform: scale(1.1);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
         }
 
         .cart-count {
             position: absolute;
             top: -5px;
             right: -5px;
-            background: var(--accent);
-            color: #333;
-            font-size: 12px;
+            background: var(--danger);
+            color: white;
+            font-size: 11px;
             font-weight: 900;
             width: 22px;
             height: 22px;
@@ -281,7 +290,7 @@
         }
 
         .cart-item-remove {
-            color: #ff4d4d;
+            color: var(--danger);
             font-size: 12px;
             cursor: pointer;
             background: none;
@@ -316,25 +325,10 @@
             color: var(--text-light);
         }
 
-        @media (max-width: 480px) {
-            .cart-sidebar {
-                max-width: 100%;
-            }
-            .cart-icon-float {
-                bottom: 100px;
-                top: auto;
-                transform: none;
-                right: 15px;
-            }
-            .cart-icon-float:hover {
-                transform: scale(1.1);
-            }
-        }
-
         /* Hero Section */
         .hero {
             background: linear-gradient(135deg, #e8f2fa 0%, #d4e8f7 100%);
-            padding: 50px 20px 40px;
+            padding: 60px 20px 40px;
         }
 
         .hero-content {
@@ -347,10 +341,10 @@
         }
 
         .hero-text h1 {
-            font-size: 42px;
+            font-size: 48px;
             font-weight: 900;
             color: var(--text);
-            line-height: 1.2;
+            line-height: 1.1;
             margin-bottom: 20px;
         }
 
@@ -367,14 +361,14 @@
 
         .hero-benefits {
             display: grid;
-            gap: 12px;
+            gap: 14px;
             margin-bottom: 30px;
         }
 
         .benefit-item {
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 12px;
             font-size: 16px;
             font-weight: 500;
         }
@@ -382,26 +376,13 @@
         .benefit-item svg {
             width: 24px;
             height: 24px;
-            color: var(--primary);
+            color: var(--success);
             flex-shrink: 0;
         }
 
         .hero-image {
             text-align: center;
             position: relative;
-            z-index: 1;
-        }
-
-        .product-image {
-            width: 100%;
-            max-width: 500px;
-            filter: drop-shadow(0 20px 40px rgba(0,0,0,0.15));
-            animation: float 3s ease-in-out infinite;
-        }
-
-        @keyframes float {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-10px); }
         }
 
         .badge-original {
@@ -428,7 +409,7 @@
         .urgency-bar {
             background: linear-gradient(135deg, var(--primary), var(--secondary));
             color: white;
-            padding: 20px;
+            padding: 25px 20px;
             text-align: center;
             position: relative;
             overflow: hidden;
@@ -455,14 +436,15 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 20px;
+            gap: 25px;
             flex-wrap: wrap;
             position: relative;
         }
 
         .urgency-text {
-            font-size: 18px;
-            font-weight: 700;
+            font-size: 20px;
+            font-weight: 800;
+            letter-spacing: 0.5px;
         }
 
         .timer {
@@ -471,28 +453,30 @@
         }
 
         .timer-box {
-            background: rgba(255,255,255,0.2);
-            padding: 10px 15px;
+            background: rgba(255,255,255,0.25);
+            padding: 12px 18px;
             border-radius: 8px;
             text-align: center;
             backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.3);
         }
 
         .timer-number {
-            font-size: 24px;
+            font-size: 28px;
             font-weight: 900;
             display: block;
         }
 
         .timer-label {
             font-size: 11px;
-            opacity: 0.9;
+            opacity: 0.95;
             text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
         /* Pricing Section */
         .pricing {
-            padding: 60px 20px;
+            padding: 70px 20px;
             background: var(--bg);
         }
 
@@ -503,7 +487,7 @@
 
         .section-title {
             text-align: center;
-            font-size: 36px;
+            font-size: 40px;
             font-weight: 900;
             margin-bottom: 15px;
             color: var(--text);
@@ -518,7 +502,7 @@
 
         .pricing-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: repeat(3, 1fr);
             gap: 30px;
             margin-bottom: 40px;
         }
@@ -526,102 +510,83 @@
         .pricing-card {
             background: white;
             border: 2px solid var(--border);
-            border-radius: 20px;
-            padding: 30px;
+            border-radius: 16px;
+            padding: 35px 25px;
             text-align: center;
             transition: all 0.3s ease;
             position: relative;
+            display: flex;
+            flex-direction: column;
         }
 
         .pricing-card:hover {
-            transform: translateY(-5px);
+            transform: translateY(-8px);
             box-shadow: 0 20px 40px rgba(0,0,0,0.1);
         }
 
         .pricing-card.popular {
             border-color: var(--primary);
             background: linear-gradient(135deg, #ffffff 0%, #e8f2fa 100%);
-            transform: scale(1.05);
+            transform: scale(1.08);
+            box-shadow: 0 15px 35px rgba(0, 82, 163, 0.15);
         }
 
-        .more-options-btn {
-            background: white;
-            border: 2px solid var(--primary);
-            color: var(--primary);
-            padding: 15px 40px;
-            font-size: 16px;
-            font-weight: 700;
-            border-radius: 50px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            margin: 30px auto 0;
-            display: block;
-        }
-
-        .more-options-btn:hover {
-            background: var(--primary);
-            color: white;
-        }
-
-        .secondary-kits {
-            display: none;
-            margin-top: 30px;
-        }
-
-        .secondary-kits.active {
-            display: block;
+        .pricing-card.popular:hover {
+            transform: scale(1.08) translateY(-8px);
         }
 
         .discount-badge {
             position: absolute;
-            top: -10px;
+            top: -12px;
             left: 20px;
-            background: #27ae60;
+            background: var(--success);
             color: white;
-            padding: 5px 15px;
+            padding: 6px 16px;
             border-radius: 20px;
-            font-size: 14px;
+            font-size: 13px;
             font-weight: 900;
+            box-shadow: 0 2px 8px rgba(39, 174, 96, 0.3);
         }
 
         .popular-badge {
             position: absolute;
-            top: -15px;
-            left: 50%;
-            transform: translateX(-50%);
-            background: var(--primary);
-            color: white;
-            padding: 5px 20px;
+            top: -12px;
+            right: 20px;
+            background: var(--accent);
+            color: #333;
+            padding: 6px 16px;
             border-radius: 20px;
             font-size: 12px;
-            font-weight: 700;
+            font-weight: 800;
             text-transform: uppercase;
+            box-shadow: 0 2px 8px rgba(253, 184, 39, 0.3);
         }
 
         .pricing-duration {
-            font-size: 24px;
+            font-size: 22px;
             font-weight: 800;
             color: var(--text);
             margin-bottom: 10px;
+            margin-top: 10px;
         }
 
         .product-rating {
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 5px;
+            gap: 6px;
             margin-bottom: 15px;
-            font-size: 14px;
+            font-size: 13px;
         }
 
         .stars {
-            color: #fdb827;
+            color: var(--accent);
             display: flex;
             gap: 2px;
         }
 
         .rating-value {
-            font-weight: 700;
+            font-weight: 800;
             color: var(--text);
         }
 
@@ -638,55 +603,58 @@
 
         .pricing-image {
             width: 100%;
-            max-width: 200px;
+            max-width: 180px;
             margin: 20px auto;
+            filter: drop-shadow(0 10px 25px rgba(0,0,0,0.1));
         }
 
         .pricing-old-price {
             text-decoration: line-through;
             color: var(--text-light);
-            font-size: 18px;
+            font-size: 16px;
         }
 
         .pricing-price {
-            font-size: 48px;
+            font-size: 52px;
             font-weight: 900;
             color: var(--primary);
-            margin: 10px 0;
+            margin: 12px 0;
         }
 
         .pricing-price small {
-            font-size: 24px;
+            font-size: 26px;
         }
 
         .pricing-installment {
             font-size: 14px;
             color: var(--text-light);
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
 
         .pricing-savings {
-            background: var(--accent);
+            background: var(--success);
             color: white;
-            padding: 8px 15px;
+            padding: 10px 16px;
             border-radius: 20px;
             font-size: 14px;
             font-weight: 700;
             display: inline-block;
             margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(39, 174, 96, 0.3);
         }
 
         .pricing-features {
             text-align: center;
             margin: 20px 0;
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: 1fr;
             gap: 10px;
+            flex: 1;
         }
 
         .pricing-features li {
             list-style: none;
-            padding: 12px 8px;
+            padding: 12px 12px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -704,16 +672,12 @@
             border-color: var(--primary);
         }
 
-        .pricing-features li svg {
-            display: none;
-        }
-
         .cta-button {
             background: linear-gradient(135deg, var(--primary), var(--secondary));
             color: white;
             border: none;
-            padding: 18px 40px;
-            font-size: 18px;
+            padding: 16px 40px;
+            font-size: 16px;
             font-weight: 800;
             border-radius: 50px;
             cursor: pointer;
@@ -724,11 +688,17 @@
             text-decoration: none;
             display: block;
             text-align: center;
+            margin-top: auto;
+            letter-spacing: 0.5px;
         }
 
         .cta-button:hover {
-            transform: translateY(-2px);
+            transform: translateY(-3px);
             box-shadow: 0 12px 30px rgba(0, 82, 163, 0.4);
+        }
+
+        .cta-button:active {
+            transform: translateY(-1px);
         }
 
         .secure-payment {
@@ -744,13 +714,13 @@
         .secure-payment svg {
             width: 16px;
             height: 16px;
-            color: var(--primary);
+            color: var(--success);
         }
 
         /* Social Proof */
         .social-proof {
             background: var(--bg-light);
-            padding: 60px 20px;
+            padding: 70px 20px;
         }
 
         .social-proof-content {
@@ -760,38 +730,44 @@
 
         .stats {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-template-columns: repeat(4, 1fr);
             gap: 30px;
-            margin-bottom: 50px;
+            margin-bottom: 60px;
         }
 
         .stat-item {
             text-align: center;
+            padding: 30px 20px;
+            background: white;
+            border-radius: 12px;
+            border: 1px solid var(--border);
         }
 
         .stat-number {
-            font-size: 48px;
+            font-size: 44px;
             font-weight: 900;
             color: var(--primary);
             display: block;
         }
 
         .stat-label {
-            font-size: 16px;
+            font-size: 15px;
             color: var(--text-light);
+            margin-top: 8px;
         }
 
         .testimonials {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(3, 1fr);
             gap: 30px;
         }
 
         .testimonial-card {
             background: white;
             padding: 25px;
-            border-radius: 15px;
+            border-radius: 12px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            border: 1px solid var(--border);
         }
 
         .testimonial-header {
@@ -811,31 +787,35 @@
             justify-content: center;
             color: white;
             font-weight: 700;
-            font-size: 20px;
+            font-size: 18px;
+            flex-shrink: 0;
         }
 
         .testimonial-info h4 {
-            font-size: 16px;
+            font-size: 15px;
             margin-bottom: 3px;
+            font-weight: 700;
         }
 
         .testimonial-stars {
             color: var(--accent);
+            font-size: 14px;
         }
 
         .testimonial-text {
             font-size: 14px;
             line-height: 1.6;
             color: var(--text-light);
+            margin-bottom: 10px;
         }
 
         .testimonial-verified {
             display: flex;
             align-items: center;
             gap: 5px;
-            margin-top: 10px;
             font-size: 12px;
-            color: var(--primary);
+            color: var(--success);
+            font-weight: 600;
         }
 
         .testimonial-verified svg {
@@ -845,7 +825,7 @@
 
         /* Why Buy Here */
         .why-buy {
-            padding: 60px 20px;
+            padding: 70px 20px;
             background: white;
         }
 
@@ -863,6 +843,14 @@
         .why-card {
             text-align: center;
             padding: 30px 20px;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            transition: all 0.3s ease;
+        }
+
+        .why-card:hover {
+            border-color: var(--primary);
+            box-shadow: 0 10px 25px rgba(0, 82, 163, 0.1);
         }
 
         .why-icon {
@@ -886,6 +874,7 @@
             font-size: 20px;
             margin-bottom: 10px;
             color: var(--text);
+            font-weight: 700;
         }
 
         .why-card p {
@@ -896,7 +885,7 @@
 
         /* FAQ */
         .faq {
-            padding: 60px 20px;
+            padding: 70px 20px;
             background: var(--bg-light);
         }
 
@@ -910,6 +899,7 @@
             border-radius: 10px;
             margin-bottom: 15px;
             overflow: hidden;
+            border: 1px solid var(--border);
         }
 
         .faq-question {
@@ -920,7 +910,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            transition: background 0.3s ease;
+            transition: all 0.3s ease;
         }
 
         .faq-question:hover {
@@ -949,7 +939,7 @@
         .footer {
             background: var(--text);
             color: white;
-            padding: 40px 20px 20px;
+            padding: 50px 20px 20px;
         }
 
         .footer-content {
@@ -959,14 +949,15 @@
 
         .footer-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
             margin-bottom: 30px;
         }
 
         .footer-section h3 {
             margin-bottom: 15px;
             font-size: 18px;
+            font-weight: 700;
         }
 
         .footer-section p {
@@ -995,7 +986,7 @@
         .footer-bottom {
             border-top: 1px solid rgba(255,255,255,0.1);
             padding-top: 20px;
-            padding-bottom: 80px; /* Espaço para o sticky CTA */
+            padding-bottom: 80px;
             text-align: center;
             font-size: 12px;
             color: rgba(255,255,255,0.5);
@@ -1066,10 +1057,12 @@
             cursor: pointer;
             z-index: 998;
             transition: all 0.3s ease;
+            text-decoration: none;
         }
 
         .whatsapp-float:hover {
             transform: scale(1.1);
+            box-shadow: 0 6px 25px rgba(37, 211, 102, 0.5);
         }
 
         .whatsapp-float svg {
@@ -1080,30 +1073,11 @@
         /* Responsive */
         @media (max-width: 768px) {
             .header-trust {
-                display: flex;
-                gap: 10px;
-            }
-
-            .trust-badge {
-                display: flex;
-                align-items: center;
-                background: var(--bg-light);
-                padding: 6px 8px;
-                border-radius: 6px;
-                border: 1px solid var(--border);
-            }
-
-            .trust-badge svg {
-                width: 14px;
-                height: 14px;
+                gap: 8px;
             }
 
             .trust-badge span {
                 display: none;
-            }
-
-            .logo img {
-                height: 35px;
             }
 
             .hero-content {
@@ -1112,19 +1086,15 @@
             }
 
             .hero-text h1 {
-                font-size: 28px;
+                font-size: 32px;
             }
 
             .hero-subtitle {
                 font-size: 16px;
             }
 
-            .benefit-item {
-                font-size: 14px;
-            }
-
             .section-title {
-                font-size: 24px;
+                font-size: 28px;
             }
 
             .section-subtitle {
@@ -1136,73 +1106,28 @@
                 gap: 20px;
             }
 
-            /* Reordenar kits no mobile - Kit 6 meses primeiro */
-            .pricing-grid {
-                display: flex;
-                flex-direction: column;
-            }
-
-            .kit-6meses {
-                order: -1; /* Kit 6 meses aparece primeiro */
+            .pricing-card {
+                padding: 25px 20px;
             }
 
             .pricing-card.popular {
                 transform: scale(1);
             }
 
-            /* CARDS MAIS COMPACTOS NO MOBILE */
-            .pricing-card {
-                padding: 20px 15px;
+            .pricing-card.popular:hover {
+                transform: translateY(-8px);
             }
 
             .pricing-duration {
                 font-size: 20px;
-                margin-bottom: 5px;
-            }
-
-            .pricing-bottles {
-                font-size: 13px;
-                margin-bottom: 15px;
-            }
-
-            .pricing-image {
-                max-width: 180px;
-                margin: 15px auto;
-            }
-
-            .pricing-old-price {
-                font-size: 15px;
-                margin-bottom: 5px;
             }
 
             .pricing-price {
-                font-size: 36px;
-                margin: 8px 0;
+                font-size: 40px;
             }
 
             .pricing-price small {
-                font-size: 20px;
-            }
-
-            .pricing-installment {
-                font-size: 13px;
-                margin-bottom: 12px;
-            }
-
-            .pricing-savings {
-                padding: 6px 12px;
-                font-size: 13px;
-                margin-bottom: 15px;
-            }
-
-            .pricing-features {
-                margin: 15px 0;
-                gap: 8px;
-            }
-
-            .pricing-features li {
-                padding: 10px 6px;
-                font-size: 11px;
+                font-size: 22px;
             }
 
             .cta-button {
@@ -1210,57 +1135,13 @@
                 font-size: 15px;
             }
 
-            .secure-payment {
-                margin-top: 12px;
-                font-size: 11px;
-            }
-
-            .discount-badge {
-                font-size: 12px;
-                padding: 4px 12px;
-                top: -8px;
-            }
-
-            .popular-badge {
-                font-size: 11px;
-                padding: 4px 15px;
-                top: -12px;
-            }
-
-            .sticky-cta {
-                display: block;
-            }
-
-            .whatsapp-float {
-                bottom: 100px;
-                width: 55px;
-                height: 55px;
-            }
-
-            .whatsapp-float svg {
-                width: 28px;
-                height: 28px;
-            }
-
-            .timer {
-                gap: 10px;
-            }
-
-            .timer-box {
-                padding: 8px 10px;
-            }
-
-            .timer-number {
-                font-size: 18px;
-            }
-
-            .urgency-text {
-                font-size: 14px;
-            }
-
             .stats {
                 grid-template-columns: repeat(2, 1fr);
                 gap: 20px;
+            }
+
+            .stat-item {
+                padding: 20px 15px;
             }
 
             .testimonials {
@@ -1276,6 +1157,26 @@
                 grid-template-columns: 1fr;
                 gap: 25px;
             }
+
+            .urgency-content {
+                gap: 15px;
+            }
+
+            .urgency-text {
+                font-size: 16px;
+            }
+
+            .timer-box {
+                padding: 10px 14px;
+            }
+
+            .timer-number {
+                font-size: 22px;
+            }
+
+            .timer-label {
+                font-size: 10px;
+            }
         }
 
         @media (max-width: 480px) {
@@ -1283,18 +1184,12 @@
                 font-size: 24px;
             }
 
-            /* EXTRA COMPACTO EM TELAS MUITO PEQUENAS */
             .pricing-card {
-                padding: 18px 12px;
+                padding: 20px 15px;
             }
 
             .pricing-duration {
                 font-size: 18px;
-            }
-
-            .pricing-image {
-                max-width: 150px;
-                margin: 12px auto;
             }
 
             .pricing-price {
@@ -1305,38 +1200,43 @@
                 font-size: 18px;
             }
 
-            .pricing-features {
-                gap: 6px;
-            }
-
-            .pricing-features li {
-                font-size: 10px;
-                padding: 8px 4px;
+            .pricing-image {
+                max-width: 150px;
             }
 
             .stat-number {
-                font-size: 36px;
-            }
-
-            .cta-button {
-                padding: 13px 25px;
-                font-size: 14px;
-            }
-
-            .badge-original {
-                font-size: 11px;
-                padding: 8px 15px;
+                font-size: 32px;
             }
 
             .why-grid {
                 grid-template-columns: 1fr;
+            }
+
+            .section-title {
+                font-size: 24px;
+            }
+
+            .urgency-content {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            .timer {
+                gap: 10px;
+            }
+
+            .timer-box {
+                padding: 8px 10px;
+            }
+
+            .timer-number {
+                font-size: 18px;
             }
         }
     </style>
 </head>
 <body>
     <!-- Header -->
-    <!-- Carrinho Flutuante -->
     <div class="cart-icon-float" onclick="toggleCart()">
         <svg width="28" height="28" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
@@ -1357,7 +1257,6 @@
             <button class="close-cart" onclick="toggleCart()">&times;</button>
         </div>
         <div class="cart-items" id="cartItems">
-            <!-- Itens serão inseridos via JS -->
             <div class="empty-cart-msg">Seu carrinho está vazio</div>
         </div>
         <div class="cart-footer">
@@ -1378,7 +1277,7 @@
     <header class="header">
         <div class="header-content">
             <div class="logo">
-                <img src="https://i.postimg.cc/85DK02R7/logo.webp" alt="Minoxidil Kirkland - Loja Oficial Brasil" style="height: 40px; width: auto;" loading="eager">
+                <img src="https://i.postimg.cc/85DK02R7/logo.webp" alt="Gift Card Ipiranga" loading="eager">
             </div>
             <div class="header-trust">
                 <div class="trust-badge">
@@ -1402,7 +1301,7 @@
         <div class="hero-content">
             <div class="hero-text">
                 <h1>
-                    <span class="highlight">Posto Ipiranga</span><br>
+                    <span class="highlight">Gift Card Ipiranga</span><br>
                     Abasteça com Economia
                 </h1>
                 <p class="hero-subtitle">
@@ -1467,145 +1366,81 @@
     <section class="pricing">
         <div class="pricing-content">
             <h2 class="section-title">Escolha Seu Gift Card Ideal</h2>
-            <p class="section-subtitle">Quanto maior o gift, maior a economia e melhores os descontos</p>
+            <p class="section-subtitle">Quanto maior o gift, maior a economia</p>
             
             <div class="pricing-grid">
                 
-                <!-- Kit 6 Meses - POPULAR - 33% OFF - CENTRO NO DESKTOP -->
-                <div class="pricing-card popular kit-6meses">
-                    <div class="popular-badge">⭐ MAIS VENDIDO</div>
+                <!-- Gift Card R$ 300 -->
+                <div class="pricing-card">
                     <div class="discount-badge">-65%</div>
                     <div class="pricing-duration">R$ 300,00 de Saldo</div>
                     <div class="product-rating">
-                        <div class="stars">
-                            <svg width="14" height="14" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                            <svg width="14" height="14" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                            <svg width="14" height="14" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                            <svg width="14" height="14" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                            <svg width="14" height="14" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                        </div>
+                        <div class="stars">★★★★★</div>
                         <span class="rating-value">4.9</span>
-                        <span class="review-count">(12.5k avaliações)</span>
+                        <span class="review-count">(50k+)</span>
                     </div>
                     <div class="pricing-bottles">Abasteça até R$ 300,00 por R$ 69,90</div>
                     <img src="https://i.postimg.cc/59gt5MGX/1000265746_removebg_preview.png" alt="Gift Card Ipiranga R$ 300" class="pricing-image" loading="lazy">
                     <div class="pricing-old-price">De R$ 300,00</div>
                     <div class="pricing-price">R$ <span>69</span>,90</div>
-                    <div class="pricing-installment">ou 12x de R$ 5,83</div>
+                    <div class="pricing-installment">ou 12x de R$ 5,82</div>
                     <div class="pricing-savings">Economize R$ 230,10 (77%)</div>
                     <ul class="pricing-features">
-                        <li>R$ 300,00 de Saldo Disponível</li>
-                        <li>Válido para qualquer tipo de Combústivel</li>
-                        <li>Abasteça quantas vezes quiser</li>
-                        <li>Aceito em todos os Postos Ipiranga</li>
+                        <li>✓ R$ 300,00 de Saldo</li>
+                        <li>✓ Válido em toda a rede</li>
+                        <li>✓ Sem data de expiração</li>
+                        <li>✓ Entrega instantânea</li>
                     </ul>
                     <button onclick="adicionarAoCarrinho('Gift Card R$ 300', '69.90', 'https://i.postimg.cc/59gt5MGX/1000265746_removebg_preview.png')" class="cta-button">Adicionar ao Carrinho</button>
-                    <div class="secure-payment">
-                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
-                        </svg>
-                        <span>Ambiente 100% Seguro</span>
-                    </div>
                 </div>
 
-
-            <!-- Botão Ver Mais Opções -->
-            <button class="more-options-btn" onclick="toggleMoreOptions()">
-                <span id="btnText">➕ Ver Mais Opções de Kits</span>
-            </button>
-
-            <!-- Kits Secundários -->
-            <div class="secondary-kits" id="secondaryKits">
-                <div class="pricing-grid" style="margin-top: 30px;">
-                    <!-- Gift Card R$ 400 -->
-                    <div class="pricing-card">
-                        <div class="discount-badge">-78%</div>
-                        <div class="pricing-duration">R$ 400,00 de Saldo</div>
-                        <div class="product-rating">
-                            <div class="stars">
-                                <svg width="14" height="14" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                                <svg width="14" height="14" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                                <svg width="14" height="14" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                                <svg width="14" height="14" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                                <svg width="14" height="14" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                            </div>
-                            <span class="rating-value">4.9</span>
-                            <span class="review-count">(10.2k avaliações)</span>
-                        </div>
-                        <div class="pricing-bottles">Abasteça até R$ 400,00 por R$ 89,90</div>
-                        <img src="https://i.postimg.cc/59gt5MGX/1000265746_removebg_preview.png" alt="Gift Card Ipiranga R$ 400" class="pricing-image" loading="lazy">
-                        <div class="pricing-old-price">De R$ 400,00</div>
-                        <div class="pricing-price">R$ <span>89</span>,90</div>
-                        <div class="pricing-installment">ou 12x de R$ 7,49</div>
-                        <div class="pricing-savings">Economize R$ 310,10 (78%)</div>
-                        <ul class="pricing-features">
-                            <li>R$ 400,00 de Saldo Disponível</li>
-                            <li>Válido para qualquer tipo de Combústivel</li>
-                            <li>Abasteça quantas vezes quiser</li>
-                            <li>Aceito em todos os Postos Ipiranga</li>
-                        </ul>
-                        <button onclick="adicionarAoCarrinho('Gift Card R$ 400', '89.90', 'https://i.postimg.cc/59gt5MGX/1000265746_removebg_preview.png')" class="cta-button">Adicionar ao Carrinho</button>
+                <!-- Gift Card R$ 500 - POPULAR -->
+                <div class="pricing-card popular">
+                    <div class="popular-badge">⭐ MAIS VENDIDO</div>
+                    <div class="discount-badge">-67%</div>
+                    <div class="pricing-duration">R$ 500,00 de Saldo</div>
+                    <div class="product-rating">
+                        <div class="stars">★★★★★</div>
+                        <span class="rating-value">4.9</span>
+                        <span class="review-count">(50k+)</span>
                     </div>
+                    <div class="pricing-bottles">Abasteça até R$ 500,00 por R$ 99,90</div>
+                    <img src="https://i.postimg.cc/59gt5MGX/1000265746_removebg_preview.png" alt="Gift Card Ipiranga R$ 500" class="pricing-image" loading="lazy">
+                    <div class="pricing-old-price">De R$ 500,00</div>
+                    <div class="pricing-price">R$ <span>99</span>,90</div>
+                    <div class="pricing-installment">ou 12x de R$ 8,32</div>
+                    <div class="pricing-savings">Economize R$ 400,10 (80%)</div>
+                    <ul class="pricing-features">
+                        <li>✓ R$ 500,00 de Saldo</li>
+                        <li>✓ Melhor custo-benefício</li>
+                        <li>✓ Sem data de expiração</li>
+                        <li>✓ Entrega instantânea</li>
+                    </ul>
+                    <button onclick="adicionarAoCarrinho('Gift Card R$ 500', '99.90', 'https://i.postimg.cc/59gt5MGX/1000265746_removebg_preview.png')" class="cta-button">Adicionar ao Carrinho</button>
+                </div>
 
-                    <!-- Gift Card R$ 500 -->
-                    <div class="pricing-card">
-                        <div class="discount-badge">-80%</div>
-                        <div class="pricing-duration">R$ 500,00 de Saldo</div>
-                        <div class="product-rating">
-                            <div class="stars">
-                                <svg width="14" height="14" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                                <svg width="14" height="14" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                                <svg width="14" height="14" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                                <svg width="14" height="14" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                                <svg width="14" height="14" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                            </div>
-                            <span class="rating-value">4.9</span>
-                            <span class="review-count">(15.8k avaliações)</span>
-                        </div>
-                        <div class="pricing-bottles">Abasteça até R$ 500,00 por R$ 99,90</div>
-                        <img src="https://i.postimg.cc/59gt5MGX/1000265746_removebg_preview.png" alt="Gift Card Ipiranga R$ 500" class="pricing-image" loading="lazy">
-                        <div class="pricing-old-price">De R$ 500,00</div>
-                        <div class="pricing-price">R$ <span>99</span>,90</div>
-                        <div class="pricing-installment">ou 12x de R$ 8,33</div>
-                        <div class="pricing-savings">Economize R$ 400,10 (80%)</div>
-                        <ul class="pricing-features">
-                            <li>R$ 500,00 de Saldo Disponível</li>
-                            <li>Válido para qualquer tipo de Combústivel</li>
-                            <li>Abasteça quantas vezes quiser</li>
-                            <li>Aceito em todos os Postos Ipiranga</li>
-                        </ul>
-                        <button onclick="adicionarAoCarrinho('Gift Card R$ 500', '99.90', 'https://i.postimg.cc/59gt5MGX/1000265746_removebg_preview.png')" class="cta-button">Adicionar ao Carrinho</button>
+                <!-- Gift Card R$ 600 -->
+                <div class="pricing-card">
+                    <div class="discount-badge">-75%</div>
+                    <div class="pricing-duration">R$ 600,00 de Saldo</div>
+                    <div class="product-rating">
+                        <div class="stars">★★★★★</div>
+                        <span class="rating-value">4.9</span>
+                        <span class="review-count">(50k+)</span>
                     </div>
-
-                    <!-- Gift Card R$ 600 -->
-                    <div class="pricing-card">
-                        <div class="discount-badge">-75%</div>
-                        <div class="pricing-duration">R$ 600,00 de Saldo</div>
-                        <div class="product-rating">
-                            <div class="stars">
-                                <svg width="14" height="14" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                                <svg width="14" height="14" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                                <svg width="14" height="14" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                                <svg width="14" height="14" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                                <svg width="14" height="14" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                            </div>
-                            <span class="rating-value">4.9</span>
-                            <span class="review-count">(18.5k avaliações)</span>
-                        </div>
-                        <div class="pricing-bottles">Abasteça até R$ 600,00 por R$ 149,90</div>
-                        <img src="https://i.postimg.cc/59gt5MGX/1000265746_removebg_preview.png" alt="Gift Card Ipiranga R$ 600" class="pricing-image" loading="lazy">
-                        <div class="pricing-old-price">De R$ 600,00</div>
-                        <div class="pricing-price">R$ <span>149</span>,90</div>
-                        <div class="pricing-installment">ou 12x de R$ 12,49</div>
-                        <div class="pricing-savings">Economize R$ 450,10 (75%)</div>
-                        <ul class="pricing-features">
-                            <li>R$ 600,00 de Saldo Disponível</li>
-                            <li>Válido para qualquer tipo de Combústivel</li>
-                            <li>Abasteça quantas vezes quiser</li>
-                            <li>Aceito em todos os Postos Ipiranga</li>
-                        </ul>
-                        <button onclick="adicionarAoCarrinho('Gift Card R$ 600', '149.90', 'https://i.postimg.cc/59gt5MGX/1000265746_removebg_preview.png')" class="cta-button">Adicionar ao Carrinho</button>
-                    </div>
+                    <div class="pricing-bottles">Abasteça até R$ 600,00 por R$ 149,90</div>
+                    <img src="https://i.postimg.cc/59gt5MGX/1000265746_removebg_preview.png" alt="Gift Card Ipiranga R$ 600" class="pricing-image" loading="lazy">
+                    <div class="pricing-old-price">De R$ 600,00</div>
+                    <div class="pricing-price">R$ <span>149</span>,90</div>
+                    <div class="pricing-installment">ou 12x de R$ 12,49</div>
+                    <div class="pricing-savings">Economize R$ 450,10 (75%)</div>
+                    <ul class="pricing-features">
+                        <li>✓ R$ 600,00 de Saldo</li>
+                        <li>✓ Maior economia total</li>
+                        <li>✓ Sem data de expiração</li>
+                        <li>✓ Entrega instantânea</li>
+                    </ul>
+                    <button onclick="adicionarAoCarrinho('Gift Card R$ 600', '149.90', 'https://i.postimg.cc/59gt5MGX/1000265746_removebg_preview.png')" class="cta-button">Adicionar ao Carrinho</button>
                 </div>
             </div>
         </div>
@@ -1615,7 +1450,7 @@
     <section class="social-proof">
         <div class="social-proof-content">
             <h2 class="section-title">Milhares de Clientes Satisfeitos</h2>
-            <p class="section-subtitle">Veja o que nossos clientes estão dizendo sobre o Gift Card Ipiranga</p>
+            <p class="section-subtitle">Veja o que nossos clientes estão dizendo</p>
             
             <div class="stats">
                 <div class="stat-item">
@@ -1632,7 +1467,7 @@
                 </div>
                 <div class="stat-item">
                     <span class="stat-number">100%</span>
-                    <span class="stat-label">Seguro e Garantido</span>
+                    <span class="stat-label">Seguro</span>
                 </div>
             </div>
 
@@ -1646,9 +1481,7 @@
                         </div>
                     </div>
                     <p class="testimonial-text">
-                        "Adorei! Comprei o Gift Card de R$ 300 por R$ 69,90 e já abasteci 3 vezes. 
-                        A economia foi enorme! O código chegou além do prazo e é super fácil de usar. 
-                        Recomendo para todos!"
+                        "Adorei! Comprei o Gift Card de R$ 300 por R$ 69,90 e já abasteci 3 vezes. A economia foi enorme!"
                     </p>
                     <div class="testimonial-verified">
                         <svg fill="currentColor" viewBox="0 0 24 24">
@@ -1667,9 +1500,7 @@
                         </div>
                     </div>
                     <p class="testimonial-text">
-                        "Melhor investimento! Comprei o Gift Card de R$ 500 e já economizei muito. 
-                        Vale em qualquer Posto Ipiranga e o saldo não expira. Muito prático e rápido. 
-                        Já comprei mais para presentear!"
+                        "Melhor investimento! Comprei o Gift Card de R$ 500 e já economizei muito. Muito prático!"
                     </p>
                     <div class="testimonial-verified">
                         <svg fill="currentColor" viewBox="0 0 24 24">
@@ -1688,9 +1519,7 @@
                         </div>
                     </div>
                     <p class="testimonial-text">
-                        "Excelente! O desconto é real e muito bom. Comprei o Gift Card de R$ 600 por R$ 149,90 
-                        e economizei muito em combustível. Funciona em toda a rede Ipiranga. 
-                        Recomendo demais!"
+                        "Excelente! O desconto é real e muito bom. Funciona em toda a rede Ipiranga. Recomendo!"
                     </p>
                     <div class="testimonial-verified">
                         <svg fill="currentColor" viewBox="0 0 24 24">
@@ -1706,8 +1535,8 @@
     <!-- Why Buy Here -->
     <section class="why-buy">
         <div class="why-buy-content">
-            <h2 class="section-title">Por Que Comprar Gift Card Ipiranga Conosco?</h2>
-            <p class="section-subtitle">Garantimos a melhor experiência de compra e os melhores preços</p>
+            <h2 class="section-title">Por Que Comprar Conosco?</h2>
+            <p class="section-subtitle">Garantimos a melhor experiência de compra</p>
             
             <div class="why-grid">
                 <div class="why-card">
@@ -1717,7 +1546,7 @@
                         </svg>
                     </div>
                     <h3>100% Seguro</h3>
-                    <p>Gift Cards autenticados e garantidos. Cada código é verificado e ativado diretamente com a Ipiranga.</p>
+                    <p>Gift Cards autenticados e garantidos. Cada código é verificado diretamente com a Ipiranga.</p>
                 </div>
 
                 <div class="why-card">
@@ -1727,7 +1556,7 @@
                         </svg>
                     </div>
                     <h3>Melhor Preço</h3>
-                    <p>Trabalhamos com margem reduzida. Se encontrar mais barato, igualamos o preço + 5% de desconto adicional.</p>
+                    <p>Trabalhamos com margem reduzida. Se encontrar mais barato, igualamos + 5% de desconto.</p>
                 </div>
 
                 <div class="why-card">
@@ -1736,38 +1565,8 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                         </svg>
                     </div>
-                    <h3>Entrega Rápida</h3>
-                    <p>Enviamos em até 24h após a confirmação do pagamento. Entrega expressa em todo território nacional.</p>
-                </div>
-
-                <div class="why-card">
-                    <div class="why-icon">
-                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"></path>
-                        </svg>
-                    </div>
-                    <h3>Pagamento Seguro</h3>
-                    <p>Ambiente protegido com certificado SSL. Aceitamos todas as formas de pagamento com total segurança.</p>
-                </div>
-
-                <div class="why-card">
-                    <div class="why-icon">
-                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
-                        </svg>
-                    </div>
-                    <h3>Satisfação Garantida</h3>
-                    <p>Se não ficar satisfeito, devolvemos 100% do seu dinheiro em até 30 dias. Sem burocracia, sem perguntas.</p>
-                </div>
-
-                <div class="why-card">
-                    <div class="why-icon">
-                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"></path>
-                        </svg>
-                    </div>
-                    <h3>Suporte Dedicado</h3>
-                    <p>Equipe especializada disponível via WhatsApp, e-mail e telefone. Resposta em até 2 horas úteis.</p>
+                    <h3>Entrega Instantânea</h3>
+                    <p>Receba seu código por email em segundos. Sem esperas, sem complicações.</p>
                 </div>
             </div>
         </div>
@@ -1777,7 +1576,6 @@
     <section class="faq">
         <div class="faq-content">
             <h2 class="section-title">Perguntas Frequentes</h2>
-            <p class="section-subtitle">Tire suas dúvidas sobre o Gift Card Ipiranga</p>
             
             <div class="faq-item">
                 <div class="faq-question" onclick="toggleFaq(this)">
@@ -1785,27 +1583,7 @@
                     <span>+</span>
                 </div>
                 <div class="faq-answer">
-                    <p>Após a compra, você recebe um código de ativação. Basta apresentar este código no caixa de qualquer Posto Ipiranga do Brasil e o saldo será creditado no seu cartão de combustível. É rápido, fácil e seguro!</p>
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question" onclick="toggleFaq(this)">
-                    <span>Quanto tempo demora para receber o código?</span>
-                    <span>+</span>
-                </div>
-                <div class="faq-answer">
-                    <p>O código é enviado instantaneamente após a confirmação do pagamento, por email e SMS. Você já pode usar imediatamente em qualquer Posto Ipiranga.</p>
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question" onclick="toggleFaq(this)">
-                    <span>Posso parcelar a compra?</span>
-                    <span>+</span>
-                </div>
-                <div class="faq-answer">
-                    <p>Sim! Aceitamos parcelamento em até 12x sem juros no cartão de crédito. Também aceitamos PIX, boleto bancário e débito online.</p>
+                    <p>O Gift Card Ipiranga é um código que você compra com desconto. Após a compra, você recebe o código por email. Basta informar o código no caixa de qualquer Posto Ipiranga para abastecer.</p>
                 </div>
             </div>
 
@@ -1815,27 +1593,37 @@
                     <span>+</span>
                 </div>
                 <div class="faq-answer">
-                    <p>Não! O saldo do Gift Card não expira. Você pode usar quando quiser, em qualquer época do ano, em toda a rede Ipiranga.</p>
+                    <p>Não! O saldo do seu Gift Card não tem data de expiração. Você pode usar quando quiser, no seu tempo.</p>
                 </div>
             </div>
 
             <div class="faq-item">
                 <div class="faq-question" onclick="toggleFaq(this)">
-                    <span>Vale para todos os tipos de combustível?</span>
+                    <span>Vale em qualquer Posto Ipiranga?</span>
                     <span>+</span>
                 </div>
                 <div class="faq-answer">
-                    <p>Sim! O Gift Card Ipiranga é válido para gasolina, diesel, álcool e qualquer outro combustível disponível nos Postos Ipiranga. Use como quiser!</p>
+                    <p>Sim! O Gift Card é válido em todos os Postos Ipiranga do Brasil. Você pode abastecer em qualquer um deles.</p>
                 </div>
             </div>
 
             <div class="faq-item">
                 <div class="faq-question" onclick="toggleFaq(this)">
-                    <span>Posso presentear alguém?</span>
+                    <span>Quanto tempo leva para receber o código?</span>
                     <span>+</span>
                 </div>
                 <div class="faq-answer">
-                    <p>Sim! O Gift Card é perfeito para presentear. Você pode comprar e enviar o código para outra pessoa. É um presente prático e muito útil!</p>
+                    <p>O código é entregue instantaneamente por email após a confirmação do pagamento. Você pode começar a usar imediatamente.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    <span>Qual é a política de reembolso?</span>
+                    <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Oferecemos garantia de 7 dias. Se não estiver satisfeito, devolvemos 100% do seu dinheiro, sem perguntas.</p>
                 </div>
             </div>
         </div>
@@ -1846,31 +1634,28 @@
         <div class="footer-content">
             <div class="footer-grid">
                 <div class="footer-section">
-                    <h3>Gift Card Ipiranga</h3>
-                    <p>Compre seu Gift Card com desconto e abasteça em qualquer Posto Ipiranga do Brasil. Saldo válido para gasolina, diesel e álcool.</p>
-                                    </div>
-
+                    <h3>Sobre Nós</h3>
+                    <p>Somos a plataforma oficial de venda de Gift Cards Ipiranga com os melhores preços do mercado.</p>
+                    <p>Mais de 12.500 clientes satisfeitos em todo o Brasil.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Métodos de Pagamento</h3>
+                    <div class="payment-methods">
+                        <div class="payment-icon">Cartão</div>
+                        <div class="payment-icon">Pix</div>
+                        <div class="payment-icon">Boleto</div>
+                        <div class="payment-icon">Parcelado</div>
+                    </div>
+                </div>
                 <div class="footer-section">
                     <h3>Contato</h3>
-                    <p>📱 WhatsApp: (14) 98130-9344</p>
-                    <p>📧 Email: suporte@lojadodoutor.com</p>
-                    <p>⏰ Atendimento:</p>
-                    <p>Segunda a Sexta: 9h às 18h</p>
-                </div>
-
-                <div class="footer-section">
-                    <h3>Formas de Pagamento</h3>
-                    <img src="https://sua-url-de-imagens.com/pag.webp" alt="Formas de Pagamento: Visa, Mastercard, Elo, PIX, Boleto" loading="lazy" style="max-width: 100%; height: auto; margin-bottom: 15px; border-radius: 8px;">
-                    <p style="margin-top: 15px; font-size: 13px; color: rgba(255,255,255,0.7);">
-                        Parcelamento em até 12x no cartão<br>
-                        PIX ou Boleto à vista
-                    </p>
+                    <p>Email: suporte@giftcardipiranga.com.br</p>
+                    <p>WhatsApp: (14) 98130-9344</p>
+                    <p>Disponível de seg-sex, 9h-18h</p>
                 </div>
             </div>
-
             <div class="footer-bottom">
-                <p>&copy; 2025 Gift Card Ipiranga - Todos os Direitos Reservados</p>
-                <p style="margin-top: 8px; font-size: 11px;">Ipiranga é marca registrada.<br>Compre com Segurança e Confiança</p>
+                <p>&copy; 2026 Gift Card Ipiranga. Todos os direitos reservados. | <a href="#" style="color: rgba(255,255,255,0.7); text-decoration: none;">Política de Privacidade</a> | <a href="#" style="color: rgba(255,255,255,0.7); text-decoration: none;">Termos de Uso</a></p>
             </div>
         </div>
     </footer>
@@ -1878,7 +1663,7 @@
     <!-- Sticky CTA Mobile -->
     <div class="sticky-cta">
         <div class="sticky-cta-content">
-            <button class="cta-button" onclick="scrollToPricing()">🛒 Ver Gift Cards Disponíveis</button>
+            <button class="cta-button" onclick="scrollToPricing()">🛒 Ver Gift Cards</button>
         </div>
     </div>
 
@@ -1902,7 +1687,6 @@
         }
 
         function adicionarAoCarrinho(nome, preco, imagem) {
-            // Verifica se o item já existe no carrinho
             const itemExistente = cart.find(item => item.nome === nome);
             
             if (itemExistente) {
@@ -1920,7 +1704,6 @@
             
             atualizarCarrinho();
             
-            // Abre o carrinho automaticamente ao adicionar
             const sidebar = document.getElementById('cartSidebar');
             const overlay = document.getElementById('cartOverlay');
             if (!sidebar.classList.contains('active')) {
@@ -1951,7 +1734,6 @@
             const cartCount = document.getElementById('cartCount');
             const cartTotal = document.getElementById('cartTotal');
             
-            // O contador mostra o total de itens (soma das quantidades)
             const totalItens = cart.reduce((sum, item) => sum + item.quantidade, 0);
             cartCount.textContent = totalItens;
             
@@ -2000,7 +1782,7 @@
 
         // Countdown Timer
         function startCountdown() {
-            const endTime = new Date().getTime() + (9 * 60 * 60 * 1000); // 9 horas
+            const endTime = new Date().getTime() + (9 * 60 * 60 * 1000);
             
             const timer = setInterval(() => {
                 const now = new Date().getTime();
@@ -2016,7 +1798,7 @@
                 
                 if (distance < 0) {
                     clearInterval(timer);
-                    startCountdown(); // Reinicia
+                    startCountdown();
                 }
             }, 1000);
         }
@@ -2026,13 +1808,11 @@
             const item = element.parentElement;
             const isActive = item.classList.contains('active');
             
-            // Fecha todos
             document.querySelectorAll('.faq-item').forEach(faq => {
                 faq.classList.remove('active');
                 faq.querySelector('.faq-question span:last-child').textContent = '+';
             });
             
-            // Abre o clicado se não estava ativo
             if (!isActive) {
                 item.classList.add('active');
                 element.querySelector('span:last-child').textContent = '−';
@@ -2044,31 +1824,12 @@
             document.querySelector('.pricing').scrollIntoView({ behavior: 'smooth' });
         }
 
-        // Toggle More Options
-        function toggleMoreOptions() {
-            const secondaryKits = document.getElementById('secondaryKits');
-            const btnText = document.getElementById('btnText');
-            
-            if (secondaryKits.classList.contains('active')) {
-                secondaryKits.classList.remove('active');
-                btnText.innerHTML = '➕ Ver Mais Opções de Kits';
-            } else {
-                secondaryKits.classList.add('active');
-                btnText.innerHTML = '➖ Ver Menos Opções';
-                // Scroll suave até os kits secundários
-                setTimeout(() => {
-                    secondaryKits.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-                }, 100);
-            }
-        }
-
         // Sticky CTA visibility
         window.addEventListener('scroll', () => {
             const socialProofSection = document.querySelector('.social-proof');
             const stickyCta = document.querySelector('.sticky-cta');
             const socialProofPosition = socialProofSection.getBoundingClientRect().top;
             
-            // Aparece quando a seção de prova social está no topo da tela ou já passou
             if (socialProofPosition <= 0) {
                 stickyCta.style.display = 'block';
             } else {
