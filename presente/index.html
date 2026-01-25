@@ -2032,6 +2032,21 @@
     }, 300);
 }
 
+        function resetarBotaoCheckout() {
+    const botao = document.querySelector('.cta-button[onclick="finalizarCompra()"]');
+    if (botao) {
+        botao.disabled = false;
+        botao.textContent = 'Finalizar Compra';
+    }
+}
+
+window.addEventListener('pageshow', (event) => {
+    if (event.persisted) {
+        resetarBotaoCheckout();
+    }
+});
+
+
         // Countdown Timer
         function startCountdown() {
             const endTime = new Date().getTime() + (9 * 60 * 60 * 1000); // 9 horas
