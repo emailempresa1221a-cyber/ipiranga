@@ -2027,7 +2027,7 @@
         const dadosEncodificados = encodeURIComponent(dadosJSON);
 
         // Redirecionar com dados completos
-        const urlFinal = `${CHECKOUT_BASE_URL}spinner/?carrinho=${dadosEncodificados}`;
+        const urlFinal = `${CHECKOUT_BASE_URL}/?carrinho=${dadosEncodificados}`;
         window.location.href = urlFinal;
     }, 300);
 }
